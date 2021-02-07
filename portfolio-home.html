@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<!-- mountain background image---- -->
+<body class="container" id="mountainBackground">
+    
+<!-- --------NAVBAR---------- -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class ="navbar-brand" href="portfolio-home.html">Brittaini's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+         aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+<!-- collapses navbar -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">       
+        <ul class="navbar-nav">
+
+<!-- ---------home link---------- -->
+            <li class="nav-item active">
+                <a class="nav-link" href="portfolio-home.html">Home</a>
+            </li>
+
+<!-- ---------about link---------- -->
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio-about-me.html">About Me</a>
+            </li>
+
+<!-- ---------projex dropdown---------- -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false">
+                    My Projex</a>
+            
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="catmasks-home.html">CatMasks</a>
+                <a class="dropdown-item" href="#">Future Project</a>
+                <a class="dropdown-item" href="#">Another Future Project</a>
+            </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+<!-- -------Knowledge table(with hover)------- -->
+    <table class="table table table-hover">
+        <tr>
+            <th>I'm Knowledgeable In</th>
+        </tr>
+        <tr>
+            <td>JavaScript</td>            
+        </tr>
+        <tr>            
+            <td>HTML</td>            
+        </tr>
+        <tr>            
+            <td>CSS</td>            
+        </tr>
+        <tr >
+            <td>Bootstrap</td>
+        </tr>
+    </table>
+
+<!-- contact form -->
+<form class="container-fluid">
+    <div class="row" data-toggle="collapse">
+
+<!-- form description -->    
+            <h3 id="superBasicPortfolio">If you like my super basic portfolio and would like to give me some pointers,</h3>
+            <h2 id="pleaseContact">Please Contact Me!</h2>
+       
+<!-- form fillable boxes -->
+    <div class="container"> 
+        <div class="row">
+
+        <div class="col-sm">
+          <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+        </div>
+         
+        <div class="col-sm">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+        </div>
+
+        <div class="col-sm">
+            <input type="text" class="form-control" placeholder="Message" aria-label="Message">
+          </div>
+
+<!-- form sendit button -->
+          <div class="col-sm">
+            <button id="sendIt" type="submit" class="btn btn-success">Send It</button>
+          </div>
+
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
